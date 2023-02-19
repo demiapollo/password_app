@@ -2,7 +2,7 @@
 function generatePassword() {
   var length = parseInt(prompt("Enter password length"));
   if (length < 8 || length > 128 || isNaN(length)) {
-    return "Enter valid length";
+    return "Enter valid length (min 8 & max 128 characters are allowed)";
   }
 
   var lowerCase = confirm("Do you want to include lowercase letters?");
